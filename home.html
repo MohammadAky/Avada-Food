@@ -41,14 +41,25 @@
 
                 <!-- navigation -->
                 <div class="navigation">
-                    <ul>
-                        <li><a href="" class="selected">Home</a></li>
+                    <input type="checkbox" id="toggle-menu" hidden>
+                    <label for="toggle-menu" class="click-open">
+                        <i class="fa-solid fa-burger"></i>
+                    </label>
+
+                    <label for="toggle-menu" class="click-close">
+                        <i class="fa-solid fa-xmark"></i>
+                    </label>
+
+                    <ul class="menu">
+                        <li class="selected"><a href="" id="selected">Home</a></li>
                         <li><a href="">Recipes</a></li>
                         <li><a href="">Places</a></li>
                         <li><a href="">Blog</a></li>
                         <li><a href="">About</a></li>
                         <li><a href="">Contact</a></li>
-                        <li><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                        <li class="search-box"><a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                            <input id="search-box" type="text" placeholder="Search...">
+                        </li>
                     </ul>
                 </div>
 
