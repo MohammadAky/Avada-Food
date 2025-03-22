@@ -1,0 +1,195 @@
+/* FONTS */
+@font-face {
+  font-family: "Catamaran";
+  src: url(../fonts/Catamaran/Catamaran-VariableFont_wght.ttf);
+}
+
+:root {
+  --primary-orange: #fc7523;
+  --primary-background: #f5f5f1;
+  font-family: Catamaran;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+header {
+  background-color: var(--primary-background);
+  padding: 30px 0;
+}
+.container {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1300px;
+  padding: 0 40px;
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  color: #85817a;
+}
+
+.social > ul {
+  display: flex;
+}
+
+/* ios botton */
+.social > ul:first-child > li:first-child {
+  margin-right: 5px;
+}
+.social > ul:first-child > li:nth-child(2) {
+  background: var(--primary-orange);
+  padding: 0px 7px;
+  border-radius: 5px;
+}
+.social > ul:first-child > li:nth-child(2) > a {
+  transform: scale(5%);
+  font-size: 12px;
+  color: white;
+}
+.social > ul:first-child > li:nth-child(2) > a:hover {
+  color: white;
+}
+
+/* download */
+.social > ul:first-child > li {
+  margin-right: 15px;
+  font-size: 14px;
+}
+.social > ul:first-child > li > a {
+  color: #85817a;
+  transition: all 0.5s;
+}
+.social > ul:first-child > li > a:hover {
+  color: var(--primary-orange);
+}
+
+/* social icons */
+.social > ul:last-child > li {
+  font-size: 18px;
+  margin-left: 25px;
+  position: relative;
+  text-align: center;
+  align-items: center;
+  height: 28px;
+  width: 28px;
+  transition: all 0.5s;
+}
+.social > ul:last-child > li:hover {
+  background-color: white;
+  border-radius: 5px;
+}
+.social > ul:last-child > li > a > i {
+  color: #85817a;
+}
+
+/* social icons tringle */
+.social > ul:last-child > li:hover > a::before {
+  border-bottom: 7px solid #333338;
+}
+.social > ul:last-child > li > a::before {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border: 7px solid transparent;
+  transition: all 0.5s;
+}
+
+/* social icons bottom */
+.social > ul:last-child > li > a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -20px;
+  transform: translate(-50%, 20px);
+  background-color: transparent;
+  border-radius: 5px;
+  font-size: small;
+  color: transparent;
+  padding: 5px;
+  transition: all 0.5s;
+}
+.social > ul:last-child > li:hover > a::after {
+  color: var(--primary-background);
+  background-color: #333338;
+}
+.social > ul:last-child > li:nth-child(1) > a::after {
+  content: "Facebook";
+}
+.social > ul:last-child > li:nth-child(2) > a::after {
+  content: "Instagram";
+}
+.social > ul:last-child > li:nth-child(3) > a::after {
+  content: "X";
+}
+.social > ul:last-child > li:nth-child(4) > a::after {
+  content: "YouTube";
+}
+/* AVADA FOOD LOGO */
+.social .logo {
+  position: absolute;
+  top: 25px;
+  left: 50%;
+  transform: translate(-55%, 0);
+}
+
+/* PAGES NAV */
+.navigation {
+  margin-top: 130px;
+}
+.navigation > ul {
+  display: flex;
+  justify-content: center;
+  font-weight: bolder;
+}
+.navigation > ul > li > a {
+  color: #333338;
+  padding: 12px;
+  margin: 17px;
+  transition: all 0.5s;
+  position: relative;
+}
+.navigation > ul > li > a:hover {
+  color: var(--primary-orange);
+}
+.navigation > ul > li > a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--primary-orange);
+  transition: all 0.3s;
+}
+.navigation > ul > li > a:hover::after {
+  width: 100%;
+}
+
+.navigation > ul > li > .selected {
+  color: var(--primary-orange);
+}
+.navigation > ul > li > .selected::after {
+  width: 100%;
+}
