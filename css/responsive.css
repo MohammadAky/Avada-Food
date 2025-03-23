@@ -105,6 +105,7 @@
     cursor: none;
   }
   #search-box {
+    font-size: medium;
     visibility: visible;
     position: absolute;
     width: 93vw;
@@ -114,7 +115,12 @@
     padding: 15px;
     padding-left: 50px;
     border-radius: 10px;
-    border-color: gray;
+    border: 1px solid rgb(207, 207, 207);
+    outline: none;
+  }
+  #search-box:focus {
+    box-shadow: 0 0 10px var(--primary-orange);
+    outline: 1px solid var(--primary-orange);
   }
   .menu > .search-box:hover,
   .menu > .search-box:hover > a,
@@ -124,8 +130,53 @@
   }
   .menu > .search-box > a {
     position: absolute;
-    bottom: -45px;
+    bottom: -46px;
     color: gray;
     z-index: 5;
+  }
+}
+
+@media (max-width: 640px) {
+  /* .social .social-apps,
+  .social .avada-app {
+    visibility: hidden;
+    opacity: 0;
+  } */
+  .social > ul {
+    visibility: hidden;
+    opacity: 0;
+  }
+  .social .logo {
+    visibility: visible;
+    opacity: 1;
+    position: absolute;
+    top: 15px;
+    left: 20vw;
+    transform: translate(-50%, 0);
+    background-image: url(../images/avada-food-logo-mob-2x.webp);
+    height: 150px;
+    width: 150px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: contain;
+  }
+  header {
+    height: 100px;
+  }
+  .navigation {
+    margin-top: 0%;
+  }
+  .menu {
+    top: 6vh;
+  }
+}
+@media (max-width: 540px) {
+  .click-open,
+  .click-close {
+    top: -45px;
+    right: -5%;
+  }
+  .menu {
+    top: 3.5vh;
   }
 }

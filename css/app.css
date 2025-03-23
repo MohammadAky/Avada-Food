@@ -153,6 +153,11 @@ header {
   top: 25px;
   left: 50%;
   transform: translate(-50%, 0);
+  background-image: url(../images/avada-food-logo.svg);
+  height: 150px;
+  width: 150px;
+  background-repeat: no-repeat;
+  background-position: top center;
 }
 
 /* PAGES NAV */
@@ -161,7 +166,7 @@ header {
   opacity: 0;
 }
 .navigation {
-  margin-top: 130px;
+  margin-top: 90px;
 }
 .menu {
   display: flex;
