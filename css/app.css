@@ -291,9 +291,8 @@ header {
   text-align: center;
 }
 .foodie-image {
-  height: 30vh;
   overflow: hidden;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 .foodie-image > img {
   width: 100%;
