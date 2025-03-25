@@ -3,7 +3,10 @@
   font-family: "Catamaran";
   src: url(../fonts/Catamaran/Catamaran-VariableFont_wght.ttf);
 }
-
+@font-face {
+  font-family: "Vidaloka";
+  src: url(../fonts/Vidaloka/Vidaloka-Regular.ttf);
+}
 :root {
   --primary-orange: #fc7523;
   --primary-background: #f5f5f1;
@@ -169,6 +172,7 @@ header {
   margin-top: 90px;
 }
 .menu {
+  z-index: 10;
   display: flex;
   justify-content: center;
   font-weight: bolder;
@@ -209,4 +213,118 @@ header {
   visibility: hidden;
   opacity: 0;
   position: absolute;
+}
+
+/* TODAYS PICKS - h1 section */
+.top-restaurant {
+  height: 85vh;
+  width: 100%;
+  background: url(../images/todays-picks.jpg) center center no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.todays-picks {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  text-align: center;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 700px;
+  padding: 50px 0;
+}
+.todays-picks > h1 {
+  font-size: 40px;
+  font-family: "Vidaloka";
+  font-weight: 100;
+}
+.todays-picks > span {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--primary-orange);
+  padding: 10px 25px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 10px;
+}
+.todays-picks > time {
+  color: #85817a;
+}
+
+/* foodie journal */
+.foodie-journal {
+  background-color: var(--primary-background);
+}
+.foodie-journal > .container {
+  background-color: white;
+  width: 80%;
+  position: relative;
+  top: -80px;
+  border-radius: 15px;
+  padding-bottom: 25px;
+}
+.foodie-journal > .container > section {
+  text-align: center;
+  text-transform: uppercase;
+  border-bottom: 1px solid #cacaca;
+  margin: 0 auto 40px auto;
+}
+.foodie-journal > .container > section > h2 {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  background: white;
+  width: fit-content;
+  padding: 0 5px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.food-types {
+  display: flex;
+  gap: 40px;
+  text-align: center;
+}
+.foodie-image {
+  height: 30vh;
+  overflow: hidden;
+  margin-bottom: 25px;
+}
+.foodie-image > img {
+  width: 100%;
+  cursor: pointer;
+  object-position: center center;
+  transition: all 0.5s;
+  overflow: hidden;
+}
+.foodie-image > img:hover {
+  transform: scale(1.1);
+}
+
+.food-types > section > h3 {
+  margin-bottom: 20px;
+}
+.food-types > section > h3 > a {
+  color: #333338;
+  font-family: "Vidaloka";
+  font-weight: 500;
+  transition: all 0.3s;
+  padding: 0 10px;
+}
+.food-types > section > h3 > a:hover {
+  color: var(--primary-orange);
+}
+.food-types > section > span > a {
+  transition: all 0.5s;
+}
+.food-types > section > span:hover > a {
+  color: var(--primary-orange);
+}
+.food-types > section > time {
+  color: #85817a;
 }

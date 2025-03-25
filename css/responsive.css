@@ -28,7 +28,7 @@
   /* max width for hover nav pages  */
   .menu > li {
     background-color: white;
-    width: 100vw;
+    width: 98vw;
     text-align: center;
     padding: 15px;
     border: 1px solid white;
@@ -102,6 +102,7 @@
   .menu > .search-box {
     text-align: left;
     background-color: white;
+    height: 80px;
     cursor: none;
   }
   #search-box {
@@ -117,20 +118,26 @@
     border-radius: 10px;
     border: 1px solid rgb(207, 207, 207);
     outline: none;
+    transition: all 0.15s;
   }
   #search-box:focus {
     box-shadow: 0 0 10px var(--primary-orange);
     outline: 1px solid var(--primary-orange);
   }
-  .menu > .search-box:hover,
+  .menu > .search-box:hover {
+    background-color: white;
+    color: gray;
+    cursor: default;
+  }
   .menu > .search-box:hover > a,
   .menu > .search-box:hover > a:hover {
-    background-color: rgba(255, 255, 255, 0);
+    background-color: transparent;
     color: gray;
   }
   .menu > .search-box > a {
-    position: absolute;
-    bottom: -46px;
+    position: relative;
+    top: 13px;
+    left: -1vw;
     color: gray;
     z-index: 5;
   }
@@ -171,6 +178,7 @@
   }
 }
 @media (max-width: 540px) {
+  /* burger button */
   .click-open,
   .click-close {
     top: -45px;
@@ -178,5 +186,10 @@
   }
   .menu {
     top: 3.5vh;
+  }
+
+  /* todays picks responsive for mini mobile */
+  .todays-picks > h1 {
+    font-size: 35px;
   }
 }
