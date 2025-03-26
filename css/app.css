@@ -22,6 +22,10 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: var(--primary-background);
+}
+
 a {
   text-decoration: none;
   color: black;
@@ -37,10 +41,9 @@ header {
   padding: 30px 0;
 }
 .container {
-  width: 100%;
+  width: 80%;
   margin: 0 auto;
   max-width: 1300px;
-  padding: 0 40px;
 }
 
 .social {
@@ -258,15 +261,13 @@ header {
 }
 
 /* foodie journal */
-.foodie-journal {
-  background-color: var(--primary-background);
-}
+
 .foodie-journal > .container {
   background-color: white;
-  width: 80%;
   position: relative;
   top: -80px;
   border-radius: 15px;
+  /* padding: 0 40px; */
   padding-bottom: 25px;
 }
 .foodie-journal > .container > section {
@@ -274,6 +275,7 @@ header {
   text-transform: uppercase;
   border-bottom: 1px solid #cacaca;
   margin: 0 auto 40px auto;
+  width: 90%;
 }
 .foodie-journal > .container > section > h2 {
   position: relative;
@@ -286,8 +288,10 @@ header {
   font-weight: 600;
 }
 .food-types {
+  width: 90%;
+  margin: 0 auto;
   display: flex;
-  gap: 40px;
+  gap: 3vw;
   text-align: center;
 }
 .foodie-image {
@@ -326,4 +330,87 @@ header {
 }
 .food-types > section > time {
   color: #85817a;
+}
+
+/* popular recipes */
+.popular-recipes-inner {
+  text-align: center;
+  padding: 0 40px;
+}
+.popular-recipes-inner > h2 {
+  text-transform: uppercase;
+  color: #333338;
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.popular-recipes-inner > p {
+  color: #85817a;
+  font-size: 17;
+  margin-bottom: 70px;
+}
+/* favourite-salad */
+.favourite-salad {
+  background-color: white;
+  cursor: pointer;
+  transition: all 0.4s;
+  padding-bottom: 35px;
+}
+.favourite-salad:hover {
+  transform: scale(1.035);
+}
+.favourite-salad > img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  object-position: center center;
+  margin-bottom: 35px;
+}
+.favourite-salad h3,
+.favourite-salad p,
+.favourite-salad > a {
+  width: 90%;
+  margin: 0 auto;
+}
+.favourite-salad > h3 {
+  margin-bottom: 8px;
+}
+.favourite-salad > h3 > a {
+  font-family: "vidaloka";
+  font-size: 22px;
+  font-weight: 550;
+  transition: all 0.4s;
+}
+.favourite-salad > h3 > a:hover {
+  color: var(--primary-orange);
+}
+
+.favourite-salad > p,
+.favourite-salad > p > a {
+  color: #85817a;
+  margin-bottom: 50px;
+  transition: all 0.4s;
+}
+.favourite-salad > p > a:hover {
+  color: var(--primary-orange);
+}
+
+.br-line {
+  width: 90%;
+  margin: 0 auto;
+  border-top: 1px solid #85817a;
+  position: relative;
+  top: -25px;
+}
+
+.favourite-salad > a {
+  background-color: var(--primary-orange);
+  padding: 10px 20px;
+  width: 90%;
+  margin-left: 5%;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 15px;
+  border-radius: 5px;
 }

@@ -6,6 +6,11 @@
 }
 
 @media (max-width: 800px) {
+  /* main container */
+  .container {
+    width: 90%;
+  }
+
   .navigation {
     height: 0;
     position: relative;
@@ -141,6 +146,13 @@
     color: gray;
     z-index: 5;
   }
+
+  /* todays picks */
+  .todays-picks {
+    width: 70%;
+  }
+
+  /* foodie journal */
 }
 
 @media (max-width: 640px) {
