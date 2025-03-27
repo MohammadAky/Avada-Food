@@ -4,7 +4,18 @@
   --primary-gray: #333338;
   font-family: Catamaran;
 }
-
+@media (max-width: 1025px) {
+  /* popular recipes */
+  .favourite-salad {
+    width: 100%;
+  }
+  .suggested-food {
+    width: 100%;
+  }
+  .suggested-food > ul > li {
+    height: 200px;
+  }
+}
 @media (max-width: 800px) {
   /* main container */
   .container {
@@ -151,8 +162,6 @@
   .todays-picks {
     width: 70%;
   }
-
-  /* foodie journal */
 }
 
 @media (max-width: 640px) {
@@ -187,6 +196,10 @@
   }
   .menu {
     top: 6vh;
+  }
+  .suggested-food > ul > li {
+    width: 100%;
+    height: 100px;
   }
 }
 @media (max-width: 540px) {

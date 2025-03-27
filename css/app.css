@@ -13,7 +13,9 @@
   --primary-gray: #333338;
   font-family: Catamaran;
 }
-
+/* body {
+  overflow-x: hidden;
+} */
 *,
 *::after,
 *::before {
@@ -333,28 +335,37 @@ header {
 }
 
 /* popular recipes */
-.popular-recipes-inner {
+.popular-recipes-text {
   text-align: center;
   padding: 0 40px;
 }
-.popular-recipes-inner > h2 {
+.popular-recipes-text > h2 {
   text-transform: uppercase;
   color: #333338;
   font-weight: 500;
   font-size: 20px;
   margin-bottom: 20px;
 }
-.popular-recipes-inner > p {
+.popular-recipes-text > p {
   color: #85817a;
   font-size: 17;
   margin-bottom: 70px;
 }
+
+.popular-recipes-inner {
+  display: flex;
+  gap: 4%;
+  flex-wrap: wrap;
+}
+
 /* favourite-salad */
 .favourite-salad {
   background-color: white;
   cursor: pointer;
   transition: all 0.4s;
   padding-bottom: 35px;
+  width: 48%;
+  margin-bottom: 50px;
 }
 .favourite-salad:hover {
   transform: scale(1.035);
@@ -413,4 +424,75 @@ header {
   font-weight: 500;
   font-size: 15px;
   border-radius: 5px;
+}
+
+/* suggested-food */
+.suggested-food {
+  width: 48%;
+}
+.suggested-food > ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4%;
+}
+.suggested-food > ul > li {
+  background-size: cover;
+  background-position: center center;
+  height: 250px;
+  width: 48%;
+  margin-bottom: 4%;
+  position: relative;
+}
+.suggested-food > ul > li:nth-child(1) {
+  background-image: url(../images/suggested-fruits.jpg);
+}
+.suggested-food > ul > li:nth-child(2) {
+  background-image: url(../images/suggested-breakfast.jpg);
+}
+.suggested-food > ul > li:nth-child(3) {
+  background-image: url(../images/suggested-icecream.jpg);
+}
+.suggested-food > ul > li:nth-child(4) {
+  background-image: url(../images/suggested-drink.jpg);
+}
+.suggested-food > ul > li:nth-child(5) {
+  background-image: url(../images/suggested-salad.jpg);
+}
+.suggested-food > ul > li:nth-child(6) {
+  background-image: url(../images/suggested-vine.jpg);
+}
+
+.suggested-food > ul > li > a {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(15deg);
+
+  color: white;
+  background: linear-gradient(
+    to bottom,
+    #fc762360 0%,
+    var(--primary-orange) 100%
+  );
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s;
+  filter: blur(10px);
+}
+.suggested-food > ul > li > a > h3 {
+  font-family: "vidaloka";
+  font-weight: 150;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+}
+.suggested-food > ul > li:hover > a {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-50%, -50%) rotate(0deg);
+  filter: blur(0);
 }
