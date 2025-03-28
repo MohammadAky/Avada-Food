@@ -13,9 +13,7 @@
   --primary-gray: #333338;
   font-family: Catamaran;
 }
-/* body {
-  overflow-x: hidden;
-} */
+
 *,
 *::after,
 *::before {
@@ -26,6 +24,7 @@
 
 body {
   background-color: var(--primary-background);
+  overflow-x: hidden;
 }
 
 a {
@@ -60,38 +59,39 @@ header {
 }
 
 /* ios botton */
-.social > ul:first-child > li:first-child {
+.avada-app > li:first-child {
   margin-right: 5px;
 }
-.social > ul:first-child > li:nth-child(2) {
+.avada-app > li:nth-child(2) {
   background: var(--primary-orange);
   padding: 0px 7px;
   border-radius: 5px;
+  margin-right: 5px;
 }
-.social > ul:first-child > li:nth-child(2) > a {
+.avada-app > li:nth-child(2) > a {
   transform: scale(5%);
   font-size: 12px;
   color: white;
 }
-.social > ul:first-child > li:nth-child(2) > a:hover {
+.avada-app > li:nth-child(2) > a:hover {
   color: white;
 }
 
 /* download */
-.social > ul:first-child > li {
-  margin-right: 15px;
+.avada-app > li {
+  /* margin-right: 15px; */
   font-size: 14px;
 }
-.social > ul:first-child > li > a {
+.avada-app > li > a {
   color: #85817a;
   transition: all 0.5s;
 }
-.social > ul:first-child > li > a:hover {
+.avada-app > li > a:hover {
   color: var(--primary-orange);
 }
 
 /* social icons */
-.social > ul:last-child > li {
+.social-apps > li {
   font-size: 18px;
   margin-left: 25px;
   position: relative;
@@ -101,19 +101,19 @@ header {
   width: 28px;
   transition: all 0.5s;
 }
-.social > ul:last-child > li:hover {
+.social-apps > li:hover {
   background-color: white;
   border-radius: 5px;
 }
-.social > ul:last-child > li > a > i {
+.social-apps > li > a > i {
   color: #85817a;
 }
 
 /* social icons tringle */
-.social > ul:last-child > li:hover > a::before {
+.social-apps > li:hover > a::before {
   border-bottom: 7px solid #333338;
 }
-.social > ul:last-child > li > a::before {
+.social-apps > li > a::before {
   content: "";
   position: absolute;
   bottom: -8px;
@@ -126,7 +126,7 @@ header {
 }
 
 /* social icons bottom */
-.social > ul:last-child > li > a::after {
+.social-apps > li > a::after {
   content: "";
   position: absolute;
   left: 50%;
@@ -139,20 +139,20 @@ header {
   padding: 5px;
   transition: all 0.5s;
 }
-.social > ul:last-child > li:hover > a::after {
+.social-apps > li:hover > a::after {
   color: var(--primary-background);
   background-color: #333338;
 }
-.social > ul:last-child > li:nth-child(1) > a::after {
+.social-apps > li:nth-child(1) > a::after {
   content: "Facebook";
 }
-.social > ul:last-child > li:nth-child(2) > a::after {
+.social-apps > li:nth-child(2) > a::after {
   content: "Instagram";
 }
-.social > ul:last-child > li:nth-child(3) > a::after {
+.social-apps > li:nth-child(3) > a::after {
   content: "X";
 }
-.social > ul:last-child > li:nth-child(4) > a::after {
+.social-apps > li:nth-child(4) > a::after {
   content: "YouTube";
 }
 /* AVADA FOOD LOGO */
@@ -172,27 +172,29 @@ header {
 .navigation > label > i {
   visibility: hidden;
   opacity: 0;
+  display: none;
 }
 .navigation {
-  margin-top: 90px;
+  margin-top: 120px;
 }
 .menu {
   z-index: 10;
   display: flex;
   justify-content: center;
   font-weight: bolder;
+  gap: 50px;
 }
 .menu > li > a {
   color: #333338;
   padding: 12px;
-  margin: 17px;
+  /* margin: 17px; */
   transition: all 0.5s;
   position: relative;
 }
-.navigation > ul > li > a:hover {
+.menu > li > a:hover {
   color: var(--primary-orange);
 }
-.navigation > ul > li > a::after {
+.menu > li > a::after {
   content: "";
   position: absolute;
   left: 0;
@@ -335,18 +337,21 @@ header {
 }
 
 /* popular recipes */
-.popular-recipes-text {
+.popular-recipes-text,
+.culinary-collection-text {
   text-align: center;
   padding: 0 40px;
 }
-.popular-recipes-text > h2 {
+.popular-recipes-text > h2,
+.culinary-collection-text > h2 {
   text-transform: uppercase;
   color: #333338;
   font-weight: 500;
   font-size: 20px;
   margin-bottom: 20px;
 }
-.popular-recipes-text > p {
+.popular-recipes-text > p,
+.culinary-collection-text > p {
   color: #85817a;
   font-size: 17;
   margin-bottom: 70px;
@@ -429,6 +434,7 @@ header {
 /* suggested-food */
 .suggested-food {
   width: 48%;
+  margin-bottom: 30px;
 }
 .suggested-food > ul {
   display: flex;
@@ -495,4 +501,44 @@ header {
   visibility: visible;
   transform: translate(-50%, -50%) rotate(0deg);
   filter: blur(0);
+}
+.culinary-collection-inner > ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4%;
+}
+.culinary-collection-inner > ul > li {
+  width: 22%;
+  background-color: white;
+  margin-bottom: 4%;
+}
+.culinary-collection-inner > ul > li > a {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: default;
+}
+.culinary-collection-inner > ul > li > a > img {
+  width: 40%;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.culinary-collection-inner > ul > li > a:hover > img {
+  transform: scale(1.15);
+}
+.culinary-collection-inner > ul > li > a > span {
+  display: flex;
+  text-transform: uppercase;
+  text-align: center;
+  justify-content: center;
+  padding: 5px 15px;
+  width: 100%;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.culinary-collection-inner > ul > li > a > span:hover {
+  background-color: var(--primary-orange);
+  color: white;
 }

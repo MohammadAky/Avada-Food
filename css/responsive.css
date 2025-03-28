@@ -21,7 +21,6 @@
   .container {
     width: 90%;
   }
-
   .navigation {
     height: 0;
     position: relative;
@@ -39,6 +38,7 @@
     top: 30px;
     left: 0%;
     width: 100%;
+    gap: 0;
   }
 
   /* max width for hover nav pages  */
@@ -70,6 +70,7 @@
   .navigation > label > i {
     opacity: 1;
     visibility: visible;
+    display: block;
   }
   .click-open,
   .click-close {
@@ -85,7 +86,7 @@
   .click-close {
     opacity: 0;
     visibility: hidden;
-    right: 7px;
+    right: 5px;
     transform: rotate(-360deg);
   }
 
@@ -153,7 +154,7 @@
   .menu > .search-box > a {
     position: relative;
     top: 13px;
-    left: -1vw;
+    left: 1.5vw;
     color: gray;
     z-index: 5;
   }
@@ -161,6 +162,11 @@
   /* todays picks */
   .todays-picks {
     width: 70%;
+  }
+
+  /* culinary-collection */
+  .culinary-collection-inner > ul > li > a > span {
+    font-size: small;
   }
 }
 
@@ -179,8 +185,7 @@
     opacity: 1;
     position: absolute;
     top: 15px;
-    left: 20vw;
-    transform: translate(-50%, 0);
+    left: 100px;
     background-image: url(../images/avada-food-logo-mob-2x.webp);
     height: 150px;
     width: 150px;
@@ -202,15 +207,20 @@
     height: 100px;
   }
 }
-@media (max-width: 540px) {
+
+@media (max-width: 500px) {
   /* burger button */
   .click-open,
   .click-close {
-    top: -45px;
-    right: -5%;
+    top: -50px;
+    right: 0;
+  }
+  .click-close {
+    right: 5px;
   }
   .menu {
-    top: 3.5vh;
+    /* top: 3.5vh; */
+    top: 24px;
   }
 
   /* todays picks responsive for mini mobile */
