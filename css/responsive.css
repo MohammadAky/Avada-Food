@@ -15,6 +15,23 @@
   .suggested-food > ul > li {
     height: 200px;
   }
+
+  /* farm to table */
+  .farm-to-table-text > h2,
+  .farm-to-table-text > p,
+  .read-our-blog {
+    width: 100%;
+    text-align: center;
+  }
+  .read-our-blog > a {
+    top: 35px;
+  }
+  .farm-to-table-inner > div {
+    width: 100%;
+  }
+  .farm-to-table-inner > div > .favourite-salad {
+    margin-top: 85px;
+  }
 }
 @media (max-width: 800px) {
   /* main container */

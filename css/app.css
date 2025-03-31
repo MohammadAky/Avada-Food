@@ -44,7 +44,7 @@ header {
 .container {
   width: 80%;
   margin: 0 auto;
-  max-width: 1300px;
+  max-width: 1200px;
 }
 
 .social {
@@ -271,8 +271,8 @@ header {
   position: relative;
   top: -80px;
   border-radius: 15px;
-  /* padding: 0 40px; */
-  padding-bottom: 25px;
+  padding-top: 10px;
+  padding-bottom: 40px;
 }
 .foodie-journal > .container > section {
   text-align: center;
@@ -287,9 +287,11 @@ header {
   transform: translate(-50%, 50%);
   background: white;
   width: fit-content;
-  padding: 0 5px;
+  padding: 0 10px;
   font-size: 18px;
   font-weight: 600;
+  word-spacing: 3px;
+  letter-spacing: 2px;
 }
 .food-types {
   width: 90%;
@@ -349,6 +351,8 @@ header {
   font-weight: 500;
   font-size: 20px;
   margin-bottom: 20px;
+  word-spacing: 3px;
+  letter-spacing: 2px;
 }
 .popular-recipes-text > p,
 .culinary-collection-text > p {
@@ -502,6 +506,9 @@ header {
   transform: translate(-50%, -50%) rotate(0deg);
   filter: blur(0);
 }
+
+/* CULINARY COLLECTION */
+
 .culinary-collection-inner > ul {
   display: flex;
   flex-wrap: wrap;
@@ -511,6 +518,7 @@ header {
   width: 22%;
   background-color: white;
   margin-bottom: 4%;
+  border-radius: 10px;
 }
 .culinary-collection-inner > ul > li > a {
   width: 100%;
@@ -537,8 +545,84 @@ header {
   width: 100%;
   transition: all 0.3s;
   cursor: pointer;
+  border-radius: 10px;
+  margin-top: 10px;
 }
 .culinary-collection-inner > ul > li > a > span:hover {
   background-color: var(--primary-orange);
   color: white;
+}
+
+/* farm to table */
+.farm-to-table {
+  margin-top: 100px;
+}
+
+.farm-to-table-text {
+  display: flex;
+  flex-wrap: wrap;
+}
+.farm-to-table-text > h2 {
+  width: 60%;
+  text-transform: uppercase;
+  word-spacing: 3px;
+  letter-spacing: 2px;
+  color: #333338;
+}
+.farm-to-table-text > p {
+  color: #85817a;
+  width: 50%;
+  margin-top: 15px;
+}
+
+.read-our-blog {
+  width: 50%;
+  text-align: right;
+}
+
+.read-our-blog > a {
+  padding: 8px 30px;
+  background-color: var(--primary-orange);
+  position: relative;
+  top: -30px;
+  text-transform: uppercase;
+  color: white;
+  border-radius: 7px;
+  transition: all 0.4s;
+  font-weight: 700;
+  font-size: 15px;
+}
+.read-our-blog > a:hover {
+  background-color: #ff6200;
+}
+
+/* food corner of farm to table is like .favourite-salad section and use of that */
+.farm-to-table-inner {
+  display: flex;
+}
+.farm-to-table-inner > div {
+  width: 65%;
+}
+.farm-to-table-inner > div > .favourite-salad {
+  margin-top: 55px;
+  width: 100%;
+}
+.farm-to-table-inner > div > .favourite-salad > p {
+  margin-bottom: 20px;
+}
+.favourite-salad-p {
+  margin-bottom: 40px !important;
+}
+
+/* .suggested-food-2 */
+.suggested-food-2 > ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6%;
+}
+.suggested-food-2 > ul > li {
+  width: 47%;
+}
+.suggested-food-2 > ul > li > img {
+  width: 100%;
 }
