@@ -803,3 +803,58 @@ header {
 .city-weblogs > li > .text > a:hover {
   color: var(--primary-orange);
 }
+
+/* subscribe section  */
+.subscribe {
+  background-image: url(../images/subscribe-sec-bg.png);
+  height: 400px;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  gap: 40px;
+}
+
+.subscribe > h3 {
+  font-size: 30px;
+  font-family: "vidaloka";
+  font-weight: 570;
+}
+
+.subscribe > h3 > span {
+  color: var(--primary-orange);
+}
+.subscribe > p {
+  width: 500px;
+  text-align: center;
+  color: #85817a;
+}
+.subscribe > div > a {
+  padding: 10px 30px;
+  background-color: var(--primary-orange);
+  color: white;
+  border-radius: 10px;
+}
+.subscribe > div > input {
+  padding: 13px 30vw 13px 15px;
+  border-radius: 10px;
+  /* width: 40; */
+  border: 2px solid rgb(207, 207, 207);
+  outline: none;
+  transition: all 0.15s;
+}
+.suggested-food3 > div {
+  width: 100%;
+}
+.suggested-food3 > div > ul {
+  gap: 0;
+}
+.suggested-food3 > .suggested-food > ul > li {
+  width: 25%;
+  gap: 0;
+  height: 350px;
+  margin-bottom: 0;
+}
