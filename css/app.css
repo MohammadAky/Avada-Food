@@ -599,9 +599,12 @@ header {
 /* food corner of farm to table is like .favourite-salad section and use of that */
 .farm-to-table-inner {
   display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 4%;
 }
 .farm-to-table-inner > div {
-  width: 65%;
+  width: 63%;
 }
 .farm-to-table-inner > div > .favourite-salad {
   margin-top: 55px;
@@ -625,4 +628,178 @@ header {
 }
 .suggested-food-2 > ul > li > img {
   width: 100%;
+}
+
+.suggested-food-2 > ul > li {
+  background-color: white;
+  margin-bottom: 6%;
+  text-align: center;
+  color: #85817a;
+  padding-bottom: 25px;
+}
+
+.suggested-food-2 > ul > li > h3 {
+  padding: 15px 25px;
+  font-family: "vidaloka";
+  font-weight: 500;
+  font-size: 22px;
+}
+.suggested-food-2 > ul > li > h3 > a {
+  transition: all 0.4s;
+}
+.suggested-food-2 > ul > li > h3:hover > a {
+  color: var(--primary-orange);
+}
+.suggested-food-2 > ul > li > a {
+  color: #85817a;
+}
+
+/* ad section and ad */
+.farm-to-table-inner > aside {
+  width: 33%;
+
+  margin-top: 55px;
+}
+.latest-recipes {
+  background-image: url(../images/ad-bg.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 500px;
+  margin-bottom: 30px;
+}
+.latest-recipes > span {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 25px;
+  color: #333338;
+  width: 150px;
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.city-guide {
+  background-image: url(../images/singapore-featured-image2.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 260px;
+  position: relative;
+  margin-bottom: 60px;
+}
+.city-guide > span {
+  background-color: #333338b2;
+  color: white;
+  padding: 5px 15px;
+  font-size: 25px;
+  text-transform: capitalize;
+  position: relative;
+  top: 50%;
+}
+.city-guide > a {
+  position: absolute;
+  background-color: var(--primary-orange);
+  top: 100%;
+  left: 0%;
+  width: 100%;
+  text-align: center;
+  color: white;
+  padding: 5px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.city-guide > a > i {
+  padding-right: 5px;
+}
+
+.ad > .br-line {
+  width: 100%;
+  top: 0%;
+  border-top: 1px solid #b5b5b5;
+  margin-bottom: 25px;
+}
+
+.search-box2 {
+  position: relative;
+  margin-bottom: 25px;
+}
+.search-box2 > a > i {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #85817a;
+}
+#search-box2 {
+  font-size: medium;
+  width: 100%;
+  padding: 15px;
+  padding-left: 50px;
+  border-radius: 10px;
+  border: 1px solid rgb(207, 207, 207);
+  outline: none;
+  transition: all 0.15s;
+}
+#search-box2:focus {
+  box-shadow: 0 0 10px var(--primary-orange);
+  outline: 1px solid var(--primary-orange);
+}
+
+.ad > .social-apps {
+  display: flex;
+  /* background-color: red; */
+  gap: 5%;
+}
+.ad > .social-apps > li {
+  /* background-color: aqua; */
+  margin: 0%;
+}
+
+.suggested-citys {
+  display: flex;
+  flex-wrap: wrap;
+}
+.suggested-citys > a {
+  width: 50%;
+  text-align: center;
+  border: 1px solid #3333383c;
+  text-transform: capitalize;
+  padding: 10px 0;
+  margin: 25px 0;
+  font-family: "vidaloka";
+}
+.city-weblogs {
+  padding: 10px 0 60px 0;
+}
+.city-weblogs > li {
+  display: flex;
+  gap: 20px;
+  /* flex-wrap: wrap; */
+  height: 60px;
+  margin: 20px 0;
+}
+.city-weblogs > li > .text {
+  display: flex;
+  flex-direction: column;
+  height: 60px;
+  justify-content: space-evenly;
+}
+.city-weblogs > li img {
+  border-radius: 50%;
+}
+.city-weblogs > li > .text > time {
+  color: #85817a;
+}
+.city-weblogs > li > .text > a {
+  transition: all 0.4s;
+}
+.city-weblogs > li > .text > a:hover {
+  color: var(--primary-orange);
 }
