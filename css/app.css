@@ -848,6 +848,7 @@ header {
 }
 .suggested-food3 > div {
   width: 100%;
+  margin-bottom: 0;
 }
 .suggested-food3 > div > ul {
   gap: 0;
@@ -857,4 +858,116 @@ header {
   gap: 0;
   height: 350px;
   margin-bottom: 0;
+}
+
+/* about avada */
+.about-avada {
+  background-color: white;
+}
+.about-avada-inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3%;
+}
+.about-avada-inner > div {
+  width: 22%;
+  padding: 35px 0;
+}
+.avada-food > img {
+  width: 100%;
+}
+.avada-food > .social-apps {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+.avada-food > .social-apps > li {
+  margin: 0;
+}
+
+.quick-accses > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.quick-accses > ul > li {
+  width: 100%;
+  display: block;
+  position: relative;
+}
+.quick-accses > ul > li > a {
+  position: relative;
+}
+.quick-accses > ul > li > a > span {
+  transition: all 0.4s;
+  width: 100%;
+
+  display: block;
+  position: relative;
+  padding-right: 100%;
+  /* border-right: 3px solid var(--primary-orange); */
+}
+.quick-accses > ul > li > a > span::after {
+  content: "contact";
+  border-right: 3px solid transparent;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  color: transparent;
+  width: 100%;
+  transform: translateX(-100%);
+  transition: all 0.4s;
+}
+.quick-accses > ul > li > a > span:hover:after {
+  transform: translateX(0%);
+  border-right: 3px solid var(--primary-orange);
+}
+.quick-accses > ul > li > a:hover {
+  color: var(--primary-orange);
+}
+
+.contact-us {
+  display: flex;
+  flex-direction: column;
+}
+.contact-us h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--primary-orange);
+}
+.contact-us > span {
+  color: #85817a;
+  border-bottom: 1px solid #85817a;
+  padding: 10px;
+}
+.contact-us i {
+  color: var(--primary-orange);
+  margin-right: 10px;
+}
+.get-apps img {
+  width: 80%;
+  margin: 10px 0;
+}
+.get-apps h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--primary-orange);
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 25px 0;
+  color: #333338;
+  font-size: 15px;
+}
+footer a {
+  transition: all 0.4s;
+}
+footer a:hover {
+  color: var(--primary-orange);
 }
